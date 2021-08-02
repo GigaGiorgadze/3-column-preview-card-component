@@ -1,0 +1,129 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+}
+.main{
+    width: 75vw;
+    margin: 10vh auto;
+
+    height: 80vh;
+    display: flex;
+}
+.sedan, .SUV, .luxury{
+    background-color: hsl(31, 77%, 52%);
+    color: white;
+    display: flex;
+    height: 100%;
+    width: 33.3%;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    width: 100px;
+}
+.Text h1{
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+}
+.Text{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 90%;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.Text p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.SUV{
+    background-color: hsl(184, 100%, 22%);
+    width: 33.3%;
+}
+.luxury{
+    background-color: hsl(179, 100%, 13%);
+    width: 33.3%;
+}
+.btn{
+    height: 40%;
+    width: 64%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.btn button:active{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+}
+.btn button:hover{
+    cursor: pointer;
+}
+.btn button{
+    color: hsl(31, 77%, 52%);
+    border: none;
+    height: 18%;
+    width: 60%;
+    border-radius: 20px;
+}
+.SUV button{
+    color:hsl(184, 100%, 22%);
+}
+.luxury button{
+    color: hsl(179, 100%, 13%);
+}
+@media only screen and (max-width: 600px) {
+    .main{
+        width: 60vw;
+        margin: 5vh auto;
+
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .sedan, .SUV, .luxury{
+        background-color: hsl(31, 77%, 52%);
+        color: white;
+        display: flex;
+        height: 33.3%;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    img{
+        width: 30px;
+    }
+    body{
+        font-size: 10px;
+    }
+    .SUV{
+        background-color: hsl(184, 100%, 22%);
+        width: 100%;
+    }
+    .luxury{
+        background-color: hsl(179, 100%, 13%);
+        width: 100%;
+    }
+    .btn{
+        height: 40%;
+        width: 64%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .btn button{
+        border: none;
+        height: 50%;
+        outline: noneg;
+        width: 60%;
+        border-radius: 20px;
+    }
+}
